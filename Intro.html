@@ -1,0 +1,88 @@
+<!DOCTYPE html lang = "es">
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="Style.css">
+        <title>
+            Contacto
+        </title>
+        <script type="text/javascript" src="Validar.js"></script>
+    </head>
+
+    <body>
+        <h1 class="Titulo">
+            <b>
+            CONTACTENOS
+            </b>       
+        </h1>
+
+        <br/>
+        <br/>
+        <br/>
+
+        <div class="Contacto">
+            <div id="MensajeError"></div>
+
+            <form id="Contacto" method="POST" name="Contacto" onsubmit="return validar()">
+                
+                <input type="text" id="Nombre" name="Nombre" placeholder="Ingrese su Nombre" class="Entrada"/>
+
+                &nbsp; &nbsp; &nbsp;
+
+                <input type="text" id="Apellido" name="Apellido" placeholder="Ingrese sus Apellidos" class="Entrada"/>
+        
+                <br/>
+                <br/>
+                
+                <select class="Entrada select" id="Genero">
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="Indefinido">Indefinido</option>
+                </select>
+
+                &nbsp; &nbsp; &nbsp;
+
+                <input type="email" id="Email" name="Email" placeholder="Ingrese su Email" class="Entrada"/>
+                
+                <br/>
+                <br/>
+
+                <input type="text" id="Celular" name="Celular" placeholder="Ingrese su Celular" class="Entrada"/>
+                
+                &nbsp; &nbsp; &nbsp;
+
+                <input type="text" id="Departamento" name="Departamento" placeholder="Ingrese su Departamento" class="Entrada"/>
+                
+                <br/>
+                <br/>
+
+                <input type="text" id="Ciudad" name="Ciudad" placeholder="Ingrese su Ciudad" class="Entrada"/>
+                
+                &nbsp; &nbsp; &nbsp;
+
+                <input type="text" id="Direccion" name="Direccion" placeholder="Ingrese su Direccion" class="Entrada"/>
+                
+                <br/>
+                <br/>
+
+                <select class="Categoria select" id="Categoria">
+                    <option value="Consulta">Consulta</option>
+                    <option value="Problema">Problema</option>
+                    <option value="Queja">Queja</option>
+                </select>
+                
+                <br/>
+                <br/>
+
+                <textarea id="Descripcion" name="Descripcion" placeholder="Describa la razón de contacto" rows="4" class="Entrada"></textarea>
+
+                <br/>
+                <br/>
+
+                <input type="submit" class="Entrada submit" value="ENVIAR MENSAJE"/>
+            </form>
+        </div>
+    </body>
+</html>
